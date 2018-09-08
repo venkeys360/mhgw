@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>Ext</l7:Name>
+            <l7:Id>61c47b49c3edda7d8bddf62cc56b68e9</l7:Id>
+            <l7:Type>FOLDER</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:03.795+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Folder folderId="0000000000000000ffffffffffffec76" id="61c47b49c3edda7d8bddf62cc56b68e9" version="0">
+                    <l7:Name>Ext</l7:Name>
+                </l7:Folder>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>gmupolicytest</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba1a0</l7:Id>
+            <l7:Type>POLICY</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:03.806+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Policy guid="0367fc77-2eee-4831-b208-636ed79c4abe" id="488e6a5842b95b3976e4b28014dba1a0" version="1">
+                    <l7:PolicyDetail folderId="61c47b49c3edda7d8bddf62cc56b68e9" guid="0367fc77-2eee-4831-b208-636ed79c4abe" id="488e6a5842b95b3976e4b28014dba1a0" version="1">
+                        <l7:Name>gmupolicytest</l7:Name>
+                        <l7:PolicyType>$#{template.policy.gmupolicytest.PolicyDetail.PolicyType}#</l7:PolicyType>
+                        <l7:Properties>
+                            <l7:Property key="revision">
+                                <l7:LongValue>$#{template.policy.gmupolicytest.PolicyDetail.Properties.revision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.policy.gmupolicytest.PolicyDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:PolicyDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="$#{template.policy.gmupolicytest.Resources.ResourceSet.xml.All.CommentAssertion.CommentAssertion.Comment.stringValue}#"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Policy>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>google</l7:Name>
+            <l7:Id>61c47b49c3edda7d8bddf62cc56b6a15</l7:Id>
+            <l7:Type>CLUSTER_PROPERTY</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:03.806+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:ClusterProperty id="61c47b49c3edda7d8bddf62cc56b6a15" version="2">
+                    <l7:Name>google</l7:Name>
+                    <l7:Value>$#{template.cluster_property.google.Value}#</l7:Value>
+                </l7:ClusterProperty>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>url</l7:Name>
+            <l7:Id>61c47b49c3edda7d8bddf62cc56b6a22</l7:Id>
+            <l7:Type>CLUSTER_PROPERTY</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:03.806+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:ClusterProperty id="61c47b49c3edda7d8bddf62cc56b6a22" version="2">
+                    <l7:Name>url</l7:Name>
+                    <l7:Value>$#{template.cluster_property.url.Value}#</l7:Value>
+                </l7:ClusterProperty>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>SSL</l7:Name>
+            <l7:Id>00000000000000000000000000000002:SSL</l7:Id>
+            <l7:Type>SSG_KEY_ENTRY</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.091+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:PrivateKey alias="SSL" id="00000000000000000000000000000002:SSL" keystoreId="00000000000000000000000000000002">
+                    <l7:CertificateChain>
+                        <l7:CertificateData>
+                            <l7:IssuerName>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.IssuerName}#</l7:IssuerName>
+                            <l7:SerialNumber>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.SerialNumber}#</l7:SerialNumber>
+                            <l7:SubjectName>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.SubjectName}#</l7:SubjectName>
+                            <l7:Encoded>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.Encoded}#</l7:Encoded>
+                        </l7:CertificateData>
+                    </l7:CertificateChain>
+                    <l7:Properties>
+                        <l7:Property key="keyAlgorithm">
+                            <l7:StringValue>$#{template.ssg_key_entry.SSL.Properties.keyAlgorithm.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="keyData">
+                            <l7:StringValue algorithm="$#{template.ssg_key_entry.SSL.Properties.keyData.algorithm}#" bundleKey="$#{template.ssg_key_entry.SSL.Properties.keyData.bundleKey}#">$#{template.ssg_key_entry.SSL.Properties.keyData.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="specialPurposes">
+                            <l7:StringValue>$#{template.ssg_key_entry.SSL.Properties.specialPurposes.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:PrivateKey>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>gmupolicybackend</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba366</l7:Id>
+            <l7:Type>POLICY</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.091+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Policy guid="ed4d4120-34a2-4d3a-a9de-75faeddd2e48" id="488e6a5842b95b3976e4b28014dba366" version="0">
+                    <l7:PolicyDetail folderId="0000000000000000ffffffffffffec76" guid="ed4d4120-34a2-4d3a-a9de-75faeddd2e48" id="488e6a5842b95b3976e4b28014dba366" version="0">
+                        <l7:Name>gmupolicybackend</l7:Name>
+                        <l7:PolicyType>$#{template.policy.gmupolicybackend.PolicyDetail.PolicyType}#</l7:PolicyType>
+                        <l7:Properties>
+                            <l7:Property key="revision">
+                                <l7:LongValue>$#{template.policy.gmupolicybackend.PolicyDetail.Properties.revision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.policy.gmupolicybackend.PolicyDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tag">
+                                <l7:StringValue>$#{template.policy.gmupolicybackend.PolicyDetail.Properties.tag.StringValue}#</l7:StringValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:PolicyDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="$#{template.policy.gmupolicybackend.Resources.ResourceSet.xml.All.CommentAssertion.CommentAssertion.Comment.stringValue}#"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Policy>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>gmupolicybacked</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba386</l7:Id>
+            <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.092+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:IdentityProvider id="488e6a5842b95b3976e4b28014dba386" version="0">
+                    <l7:Name>gmupolicybacked</l7:Name>
+                    <l7:IdentityProviderType>$#{template.id_provider_config.gmupolicybacked.IdentityProviderType}#</l7:IdentityProviderType>
+                    <l7:Properties>
+                        <l7:Property key="adminEnabled">
+                            <l7:BooleanValue>$#{template.id_provider_config.gmupolicybacked.Properties.Property.BooleanValue}#</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                    <l7:Extension>
+                        <l7:PolicyBackedIdentityProviderDetail>
+                            <l7:AuthenticationPolicyId>$#{template.id_provider_config.gmupolicybacked.Extension.PolicyBackedIdentityProviderDetail.AuthenticationPolicyId}#</l7:AuthenticationPolicyId>
+                        </l7:PolicyBackedIdentityProviderDetail>
+                    </l7:Extension>
+                </l7:IdentityProvider>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>OAuth</l7:Name>
+            <l7:Id>61c47b49c3edda7d8bddf62cc56bb85f</l7:Id>
+            <l7:Type>JDBC_CONNECTION</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.092+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:JDBCConnection id="61c47b49c3edda7d8bddf62cc56bb85f" version="4">
+                    <l7:Name>OAuth</l7:Name>
+                    <l7:Enabled>$#{template.jdbc_connection.OAuth.Enabled}#</l7:Enabled>
+                    <l7:Properties>
+                        <l7:Property key="maximumPoolSize">
+                            <l7:IntegerValue>$#{template.jdbc_connection.OAuth.Properties.maximumPoolSize.IntegerValue}#</l7:IntegerValue>
+                        </l7:Property>
+                        <l7:Property key="minimumPoolSize">
+                            <l7:IntegerValue>$#{template.jdbc_connection.OAuth.Properties.minimumPoolSize.IntegerValue}#</l7:IntegerValue>
+                        </l7:Property>
+                    </l7:Properties>
+                    <l7:Extension>
+                        <l7:DriverClass>$#{template.jdbc_connection.OAuth.Extension.DriverClass}#</l7:DriverClass>
+                        <l7:JdbcUrl>$#{template.jdbc_connection.OAuth.Extension.JdbcUrl}#</l7:JdbcUrl>
+                        <l7:ConnectionProperties>
+                            <l7:Property key="EnableCancelTimeout">
+                                <l7:StringValue>$#{template.jdbc_connection.OAuth.Extension.ConnectionProperties.EnableCancelTimeout.StringValue}#</l7:StringValue>
+                            </l7:Property>
+                            <l7:Property key="password">
+                                <l7:StringValue bundleKey="$#{template.jdbc_connection.OAuth.ConnectionProperties.Password.bundleKey}#">$#{template.jdbc_connection.OAuth.Extension.ConnectionProperties.password.StringValue}#</l7:StringValue>
+                            </l7:Property>
+                            <l7:Property key="user">
+                                <l7:StringValue>$#{template.jdbc_connection.OAuth.Extension.ConnectionProperties.user.StringValue}#</l7:StringValue>
+                            </l7:Property>
+                        </l7:ConnectionProperties>
+                    </l7:Extension>
+                </l7:JDBCConnection>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>Internal Identity Provider</l7:Name>
+            <l7:Id>0000000000000000fffffffffffffffe</l7:Id>
+            <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.092+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:IdentityProvider id="0000000000000000fffffffffffffffe" version="0">
+                    <l7:Name>Internal Identity Provider</l7:Name>
+                    <l7:IdentityProviderType>$#{template.id_provider_config.Internal Identity Provider.IdentityProviderType}#</l7:IdentityProviderType>
+                </l7:IdentityProvider>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>euro</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba0e6</l7:Id>
+            <l7:Type>USER</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.106+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:User id="488e6a5842b95b3976e4b28014dba0e6" providerId="0000000000000000fffffffffffffffe">
+                    <l7:Login>euro</l7:Login>
+                    <l7:Password bundleKey="$#{template.user.euro.Password.bundleKey}#" format="bundleKey:sha512crypt">$#{template.user.euro.Password}#</l7:Password>
+                    <l7:FirstName>$#{template.user.euro.FirstName}#</l7:FirstName>
+                    <l7:LastName>$#{template.user.euro.LastName}#</l7:LastName>
+                    <l7:Email>$#{template.user.euro.Email}#</l7:Email>
+                    <l7:Properties>
+                        <l7:Property key="accountExpiration">
+                            <l7:LongValue>$#{template.user.euro.Properties.accountExpiration.LongValue}#</l7:LongValue>
+                        </l7:Property>
+                        <l7:Property key="enabled">
+                            <l7:BooleanValue>$#{template.user.euro.Properties.enabled.BooleanValue}#</l7:BooleanValue>
+                        </l7:Property>
+                        <l7:Property key="name">
+                            <l7:StringValue>euro</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:User>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>test</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba11a</l7:Id>
+            <l7:Type>GROUP</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.106+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Group id="488e6a5842b95b3976e4b28014dba11a" providerId="0000000000000000fffffffffffffffe">
+                    <l7:Name>test</l7:Name>
+                    <l7:Description>$#{template.group.test.Description}#</l7:Description>
+                </l7:Group>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>cassendratest</l7:Name>
+            <l7:Id>488e6a5842b95b3976e4b28014dba03c</l7:Id>
+            <l7:Type>CASSANDRA_CONFIGURATION</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.106+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:CassandraConnection id="488e6a5842b95b3976e4b28014dba03c" version="0">
+                    <l7:Name>cassendratest</l7:Name>
+                    <l7:Keyspace>$#{template.cassandra_configuration.cassendratest.Keyspace}#</l7:Keyspace>
+                    <l7:ContactPoint>$#{template.cassandra_configuration.cassendratest.ContactPoint}#</l7:ContactPoint>
+                    <l7:Port>$#{template.cassandra_configuration.cassendratest.Port}#</l7:Port>
+                    <l7:Username>$#{template.cassandra_configuration.cassendratest.Username}#</l7:Username>
+                    <l7:Compression>$#{template.cassandra_configuration.cassendratest.Compression}#</l7:Compression>
+                    <l7:Ssl>$#{template.cassandra_configuration.cassendratest.Ssl}#</l7:Ssl>
+                    <l7:Enabled>$#{template.cassandra_configuration.cassendratest.Enabled}#</l7:Enabled>
+                    <l7:Properties>$#{template.cassandra_configuration.cassendratest.Properties}#</l7:Properties>
+                </l7:CassandraConnection>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>testapi</l7:Name>
+            <l7:Id>61c47b49c3edda7d8bddf62cc56b69b0</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.110+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Service id="61c47b49c3edda7d8bddf62cc56b69b0" version="3">
+                    <l7:ServiceDetail folderId="61c47b49c3edda7d8bddf62cc56b68e9" id="61c47b49c3edda7d8bddf62cc56b69b0" version="3">
+                        <l7:Name>testapi</l7:Name>
+                        <l7:Enabled>$#{template.service.testapi.ServiceDetail.Enabled}#</l7:Enabled>
+                        <l7:ServiceMappings>
+                            <l7:HttpMapping>
+                                <l7:UrlPattern>$#{template.service.testapi.ServiceDetail.ServiceMappings.HttpMapping.UrlPattern}#</l7:UrlPattern>
+                                <l7:Verbs>
+                                    <l7:Verb>$#{template.service.testapi.ServiceDetail.ServiceMappings.HttpMapping.Verbs.1.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.testapi.ServiceDetail.ServiceMappings.HttpMapping.Verbs.2.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.testapi.ServiceDetail.ServiceMappings.HttpMapping.Verbs.3.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.testapi.ServiceDetail.ServiceMappings.HttpMapping.Verbs.4.Verb}#</l7:Verb>
+                                </l7:Verbs>
+                            </l7:HttpMapping>
+                        </l7:ServiceMappings>
+                        <l7:Properties>
+                            <l7:Property key="internal">
+                                <l7:BooleanValue>$#{template.service.testapi.ServiceDetail.Properties.internal.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="policyRevision">
+                                <l7:LongValue>$#{template.service.testapi.ServiceDetail.Properties.policyRevision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.service.testapi.ServiceDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tracingEnabled">
+                                <l7:BooleanValue>$#{template.service.testapi.ServiceDetail.Properties.tracingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="wssProcessingEnabled">
+                                <l7:BooleanValue>$#{template.service.testapi.ServiceDetail.Properties.wssProcessingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:ServiceDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy" version="8">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:HttpRoutingAssertion&gt;
+            &lt;L7p:ProtectedServiceUrl stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.HttpRoutingAssertion.ProtectedServiceUrl.stringValue}#"/&gt;
+            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.RequestHeaderRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.Rules.included.item.Name.stringValue}#"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.Rules.included.item.Name.stringValue.1}#"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:RequestHeaderRules&gt;
+            &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestParamRules.RequestParamRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestParamRules.RequestParamRules.Rules.httpPassthroughRules}#"/&gt;
+            &lt;/L7p:RequestParamRules&gt;
+            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.ResponseHeaderRules.ResponseHeaderRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.ResponseHeaderRules.Rules.item.item.Name.stringValue}#"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:ResponseHeaderRules&gt;
+            &lt;L7p:SamlAssertionVersion intValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HttpRoutingAssertion.HttpRoutingAssertion.SamlAssertionVersion.intValue}#"/&gt;
+        &lt;/L7p:HttpRoutingAssertion&gt;
+        &lt;L7p:Authentication&gt;
+            &lt;L7p:IdentityProviderOid goidValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.Authentication.Authentication.IdentityProviderOid.goidValue}#"/&gt;
+            &lt;L7p:Target target="$#{template.service.testapi.Resources.ResourceSet.xml.All.Authentication.Authentication.Target.target}#"/&gt;
+        &lt;/L7p:Authentication&gt;
+        &lt;L7p:JdbcQuery&gt;
+            &lt;L7p:ConnectionName stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.ConnectionName.stringValue}#"/&gt;
+            &lt;L7p:ConvertVariablesToStrings booleanValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.ConvertVariablesToStrings.booleanValue}#"/&gt;
+            &lt;L7p:SqlQuery stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.SqlQuery.stringValue}#"/&gt;
+        &lt;/L7p:JdbcQuery&gt;
+        &lt;L7p:SpecificUser&gt;
+            &lt;L7p:IdentityProviderOid goidValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.SpecificUser.SpecificUser.IdentityProviderOid.goidValue}#"/&gt;
+            &lt;L7p:Target target="$#{template.service.testapi.Resources.ResourceSet.xml.All.SpecificUser.SpecificUser.Target.target}#"/&gt;
+            &lt;L7p:UserLogin stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.SpecificUser.SpecificUser.UserLogin.stringValue}#"/&gt;
+            &lt;L7p:UserName stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.SpecificUser.SpecificUser.UserName.stringValue}#"/&gt;
+            &lt;L7p:UserUid stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.SpecificUser.SpecificUser.UserUid.stringValue}#"/&gt;
+        &lt;/L7p:SpecificUser&gt;
+        &lt;L7p:MemberOfGroup&gt;
+            &lt;L7p:GroupId stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.GroupId.stringValue}#"/&gt;
+            &lt;L7p:GroupName stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.GroupName.stringValue}#"/&gt;
+            &lt;L7p:IdentityProviderOid goidValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.IdentityProviderOid.goidValue}#"/&gt;
+            &lt;L7p:Target target="$#{template.service.testapi.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.Target.target}#"/&gt;
+        &lt;/L7p:MemberOfGroup&gt;
+        &lt;L7p:CassandraQuery&gt;
+            &lt;L7p:ConnectionName stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.CassandraQuery.CassandraQuery.ConnectionName.stringValue}#"/&gt;
+            &lt;L7p:FetchSize intValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.CassandraQuery.CassandraQuery.FetchSize.intValue}#"/&gt;
+            &lt;L7p:MaxRecords intValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.CassandraQuery.CassandraQuery.MaxRecords.intValue}#"/&gt;
+            &lt;L7p:QueryDocument stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.CassandraQuery.CassandraQuery.QueryDocument.stringValue}#"/&gt;
+            &lt;L7p:QueryTimeout stringValueNull="$#{template.service.testapi.Resources.ResourceSet.xml.All.CassandraQuery.CassandraQuery.QueryTimeout.stringValueNull}#"/&gt;
+        &lt;/L7p:CassandraQuery&gt;
+        &lt;L7p:WssEncryptElement&gt;
+            &lt;L7p:XpathExpression xpathExpressionValue="included"&gt;
+                &lt;L7p:Expression stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.WssEncryptElement.XpathExpression.XpathExpression.Expression.stringValue}#"/&gt;
+                &lt;L7p:Namespaces mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.WssEncryptElement.XpathExpression.Namespaces.entry.entry.key.stringValue}#"/&gt;
+                        &lt;L7p:value stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.WssEncryptElement.XpathExpression.Namespaces.entry.entry.value.stringValue}#"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Namespaces&gt;
+                &lt;L7p:XpathVersion xpathVersion="$#{template.service.testapi.Resources.ResourceSet.xml.All.WssEncryptElement.XpathExpression.XpathExpression.XpathVersion.xpathVersion}#"/&gt;
+            &lt;/L7p:XpathExpression&gt;
+        &lt;/L7p:WssEncryptElement&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:Base64ResponseBody stringValue="$#{template.service.testapi.Resources.ResourceSet.xml.All.HardcodedResponse.HardcodedResponse.Base64ResponseBody.stringValue}#"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Service>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>tykdtycdttdf</l7:Name>
+            <l7:Id>d45c97fdc4303aef434f0f7474e20860</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:TimeStamp>2018-09-08T17:44:04.112+05:30</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Service id="d45c97fdc4303aef434f0f7474e20860" version="2">
+                    <l7:ServiceDetail folderId="61c47b49c3edda7d8bddf62cc56b68e9" id="d45c97fdc4303aef434f0f7474e20860" version="2">
+                        <l7:Name>tykdtycdttdf</l7:Name>
+                        <l7:Enabled>$#{template.service.tykdtycdttdf.ServiceDetail.Enabled}#</l7:Enabled>
+                        <l7:ServiceMappings>
+                            <l7:HttpMapping>
+                                <l7:UrlPattern>$#{template.service.tykdtycdttdf.ServiceDetail.ServiceMappings.HttpMapping.UrlPattern}#</l7:UrlPattern>
+                                <l7:Verbs>
+                                    <l7:Verb>$#{template.service.tykdtycdttdf.ServiceDetail.ServiceMappings.HttpMapping.Verbs.1.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.tykdtycdttdf.ServiceDetail.ServiceMappings.HttpMapping.Verbs.2.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.tykdtycdttdf.ServiceDetail.ServiceMappings.HttpMapping.Verbs.3.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.tykdtycdttdf.ServiceDetail.ServiceMappings.HttpMapping.Verbs.4.Verb}#</l7:Verb>
+                                </l7:Verbs>
+                            </l7:HttpMapping>
+                        </l7:ServiceMappings>
+                        <l7:Properties>
+                            <l7:Property key="internal">
+                                <l7:BooleanValue>$#{template.service.tykdtycdttdf.ServiceDetail.Properties.internal.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="policyRevision">
+                                <l7:LongValue>$#{template.service.tykdtycdttdf.ServiceDetail.Properties.policyRevision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.service.tykdtycdttdf.ServiceDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tracingEnabled">
+                                <l7:BooleanValue>$#{template.service.tykdtycdttdf.ServiceDetail.Properties.tracingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="wssProcessingEnabled">
+                                <l7:BooleanValue>$#{template.service.tykdtycdttdf.ServiceDetail.Properties.wssProcessingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:ServiceDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy" version="1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:MemberOfGroup&gt;
+            &lt;L7p:GroupId stringValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.GroupId.stringValue}#"/&gt;
+            &lt;L7p:GroupName stringValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.GroupName.stringValue}#"/&gt;
+            &lt;L7p:IdentityProviderOid goidValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.MemberOfGroup.MemberOfGroup.IdentityProviderOid.goidValue}#"/&gt;
+        &lt;/L7p:MemberOfGroup&gt;
+        &lt;L7p:JdbcQuery&gt;
+            &lt;L7p:ConnectionName stringValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.ConnectionName.stringValue}#"/&gt;
+            &lt;L7p:ConvertVariablesToStrings booleanValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.ConvertVariablesToStrings.booleanValue}#"/&gt;
+            &lt;L7p:SqlQuery stringValue="$#{template.service.tykdtycdttdf.Resources.ResourceSet.xml.All.JdbcQuery.JdbcQuery.SqlQuery.stringValue}#"/&gt;
+        &lt;/L7p:JdbcQuery&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Service>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://dev.gateway.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>true</l7:BooleanValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrUpdate" srcId="61c47b49c3edda7d8bddf62cc56b68e9" srcUri="https://dev.gateway.com:8443/restman/1.0/folders/61c47b49c3edda7d8bddf62cc56b68e9" type="FOLDER"/>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba1a0" srcUri="https://dev.gateway.com:8443/restman/1.0/policies/488e6a5842b95b3976e4b28014dba1a0" type="POLICY"/>
+        <l7:Mapping action="NewOrUpdate" srcId="61c47b49c3edda7d8bddf62cc56b6a15" srcUri="https://dev.gateway.com:8443/restman/1.0/clusterProperties/61c47b49c3edda7d8bddf62cc56b6a15" type="CLUSTER_PROPERTY">
+            <l7:Properties>
+                <l7:Property key="MapBy">
+                    <l7:StringValue>name</l7:StringValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrUpdate" srcId="61c47b49c3edda7d8bddf62cc56b6a22" srcUri="https://dev.gateway.com:8443/restman/1.0/clusterProperties/61c47b49c3edda7d8bddf62cc56b6a22" type="CLUSTER_PROPERTY">
+            <l7:Properties>
+                <l7:Property key="MapBy">
+                    <l7:StringValue>name</l7:StringValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrUpdate" srcId="00000000000000000000000000000002:SSL" srcUri="https://dev.gateway.com:8443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY"/>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba366" srcUri="https://dev.gateway.com:8443/restman/1.0/policies/488e6a5842b95b3976e4b28014dba366" type="POLICY"/>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba386" srcUri="https://dev.gateway.com:8443/restman/1.0/identityProviders/488e6a5842b95b3976e4b28014dba386" type="ID_PROVIDER_CONFIG"/>
+        <l7:Mapping action="NewOrUpdate" srcId="61c47b49c3edda7d8bddf62cc56bb85f" srcUri="https://dev.gateway.com:8443/restman/1.0/jdbcConnections/61c47b49c3edda7d8bddf62cc56bb85f" type="JDBC_CONNECTION"/>
+        <l7:Mapping action="NewOrExisting" srcId="0000000000000000fffffffffffffffe" srcUri="https://dev.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe" type="ID_PROVIDER_CONFIG">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>true</l7:BooleanValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba0e6" srcUri="https://dev.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe/users/488e6a5842b95b3976e4b28014dba0e6" type="USER"/>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba11a" srcUri="https://dev.gateway.com:8443/restman/1.0/identityProviders/0000000000000000fffffffffffffffe/groups/488e6a5842b95b3976e4b28014dba11a" type="GROUP"/>
+        <l7:Mapping action="NewOrUpdate" srcId="488e6a5842b95b3976e4b28014dba03c" srcUri="https://dev.gateway.com:8443/restman/1.0/cassandraConnections/488e6a5842b95b3976e4b28014dba03c" type="CASSANDRA_CONFIGURATION"/>
+        <l7:Mapping action="NewOrUpdate" srcId="61c47b49c3edda7d8bddf62cc56b69b0" srcUri="https://dev.gateway.com:8443/restman/1.0/services/61c47b49c3edda7d8bddf62cc56b69b0" type="SERVICE"/>
+        <l7:Mapping action="NewOrUpdate" srcId="d45c97fdc4303aef434f0f7474e20860" srcUri="https://dev.gateway.com:8443/restman/1.0/services/d45c97fdc4303aef434f0f7474e20860" type="SERVICE"/>
+    </l7:Mappings>
+</l7:Bundle>
